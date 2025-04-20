@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💸 Welth – AI-Powered Finance Management Platform
 
-## Getting Started
+**Welth** is an intelligent personal finance management platform that helps users track, analyze, and optimize their spending using AI. From receipt scanning to personalized monthly insights, Welth makes managing your finances smarter and simpler.
 
-First, run the development server:
+---
+
+![Website Preview](/ss.png)
+
+## 🚀 Features
+
+- 📊 **Dashboard & Analytics** – Visualize spending trends with interactive charts
+- 🧾 **Receipt Scanning** – Scan physical receipts using AI (powered by Google Gemini)
+- 🤖 **Expense Insights** – Generate monthly financial insights using LLMs
+- 🔐 **Authentication & Security** – Auth via Clerk with Arcjet protection
+- ⚙️ **Event-Driven Workflows** – Background jobs and async processing with Inngest
+- 🧠 **AI Integration** – Powered by Google Gemini for NLP and vision-based tasks
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology       | Purpose                                      |
+|------------------|----------------------------------------------|
+| **Next.js**      | App framework for frontend & backend         |
+| **Tailwind CSS** | Utility-first CSS framework for styling      |
+| **Shadcn**       | Modern and accessible UI components          |
+| **Prisma**       | ORM for type-safe database access            |
+| **Supabase**     | Postgres database and file storage           |
+| **Clerk**        | Authentication and user management           |
+| **Arcjet**       | Rate-limiting and security layer             |
+| **Recharts**     | Elegant and responsive data visualizations   |
+| **Inngest**      | Serverless workflows and background jobs     |
+| **Bun**          | Fast JavaScript runtime and bundler          |
+| **Google Gemini API** | AI-powered features like receipt scanning & insights |
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/welth.git
+cd welth
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+bun install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Set up environment variables
 
-## Learn More
+Create a .env.local file and configure the following:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+DATABASE_URL=
+DIRECT_URL=
+RESEND_API_KEY=
+GEMINI_API_KEY=
+ARCJET_KEY=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Run the development server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+bun run dev
+```
+Open http://localhost:3000 in your browser.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧠 AI Capabilities
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Receipt OCR & Parsing** – Upload a picture of your receipt, and Welth will extract the data.
+- **Financial Insight Generator** – Personalized monthly summaries using LLMs.
+
+---
+
+## 🛡️ Security
+
+- Authentication managed by Clerk
+- API and route protection via Arcjet
+- Sensitive actions are protected via middleware and rate-limiting
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
+---
+
+## 📄 License
+
+MIT License © 2025 Ved Tellawar
+
