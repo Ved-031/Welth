@@ -4,7 +4,7 @@
 
 ---
 
-![Website Preview](/ss.png)
+![Website Preview](/public/ss.png)
 
 ## 🚀 Features
 
